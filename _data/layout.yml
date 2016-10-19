@@ -4,15 +4,17 @@ animation: "bounceOut"
 
 # Images
 
-logo: "logo.svg"
+#logo: "logo.svg"
 hero: "hero-bg.jpg"
+
 avatar: "travitar.jpg"
 
 # Colors
 
 accent: "#c99065"
 
-textColor: "#666"
-headlineColor: "#333"
+textColor: "#367492"
+headlineColor: "#367492"
 bgcolor: "#e5eaee"
 documentBackgroundColor: "#fff"
+navbackground: "#CECDCD"

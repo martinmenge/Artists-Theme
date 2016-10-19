@@ -1,0 +1,29 @@
+{
+  "name": "robyn-sheldon-jekyll",
+  "version": "1.0.0",
+  "description": "jekyll build with gulp for Robyn Sheldon landing page --bourbon",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "sass-convert": "^0.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinmenge/Robyn-Sheldon-Jekyll.git"
+  },
+  "keywords": [
+    "jekyll",
+    "bourbon",
+    "gulp",
+    "npm"
+  ],
+  "author": "Martin Menge",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martinmenge/Robyn-Sheldon-Jekyll/issues"
+  },
+  "homepage": "https://github.com/martinmenge/Robyn-Sheldon-Jekyll#readme"
+}

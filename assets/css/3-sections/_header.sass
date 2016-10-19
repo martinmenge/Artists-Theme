@@ -2,10 +2,21 @@ header
   @extend %background-image
   background:
     position: 30px 20px, 50% 50%
-    image: url(../img/#{$logo-path}), url(../img/#{$hero-path})
+    image: url(../img/#{$logo-path})
   padding-bottom: 50px
 
+  .site-name
+    font: 
+      size: 48px
+      weight: 700
+    padding-left: 45px
+    
+  .mid-logo
+    vertical-align: middle
+    padding-bottom: 1.3em
+    margin: auto
 
+    
   .logo
     +size(50px)
     float: left
@@ -13,38 +24,39 @@ header
 
     path
       fill: rgba(0,0,0,0.4)
-
+  
   nav
     float: right
-    padding: 30px 30px 0 0
-
+    padding: 0px 30px 0 0
+    background-color: #CECDCD
+    
     a
       display: inline-block
       margin-left: 20px
+      padding: 30px 15px 15px 5px 
 
-      color: rgba(0,0,0,0.7)
+      color: white
       @extend %small-bold
 
       &:hover
-        color: rgba(0,0,0,1)
+        color: #367492
+        background-color: white
+        
 
   h1
     text-align: center
     font:
-      size: 72px
+      size: 48px
       weight: 700
-    color: white
-    text-transform: uppercase
     letter-spacing: 0.05em
     margin-bottom: 20px
     clear: both
-    padding-top: 100px
+    padding-top: 20px
 
 
     span
       display: inline-block
       padding: 0.2em 0.5em
-      border: white solid 10px
 
   .kicker
     @extend %small-bold
@@ -52,6 +64,68 @@ header
     letter-spacing: 0.05em
     color: white
     line-height: 1
+    
+.hero 
+  $large-screen: 50em !default
+  align-items: center
+  background: 
+    image: url(../img/#{$hero-path})
+    repeat: no-repeat
+  justify-content: center
+  padding: 2em 0 0 0
+  min-height: 255px
+  max-width: 960px
+  margin: auto
+
+  @media($large-screen)
+    background-position: left
+    justify-content: flex-end
+
+  .hero-content 
+    padding-left: 5em
+    max-width: 90%
+    text-align: left
+    
+  p
+    font-size: 36px
+
+    @media($large-screen) 
+      text-align: left
+      
+      p
+        font
+          size: 36px
+  
+  .quote
+    font-size: 36px
+    text-align: right
+    padding-right: 25%
+      
+@media (max-width: 840px)
+  header
+    background:
+      position: 50% 20px, 50% 50%
+
+    nav
+      float: none
+      text-align: center
+      padding-top: 90px
+
+    h1
+      padding-top: 0px
+
+  .hero-content 
+    padding-left: 5em
+    max-width: 90%
+    text-align: left
+
+    p
+      font-size: 28px
+
+    .quote
+      font-size: 28px
+      text-align: right
+      padding-right: 25%
 
 @media (max-width: 640px)
   header
@@ -65,3 +139,38 @@ header
 
     h1
       padding-top: 0px
+    
+    .mid-logo
+      vertical-align: middle
+      padding-bottom: 2.5em
+      margin: auto
+      
+    .site-name
+      font: 
+        size: 28px
+        weight: 700
+  
+  .hero
+    align-items: center
+    background: 
+      image: url(../img/#{$hero-path})
+      repeat: no-repeat
+    justify-content: center
+    padding: 2em 0 0 0
+    min-height: 100px
+    max-width: 800px
+    margin: auto
+  
+  .hero-content 
+    padding-left: 5em
+    max-width: 90%
+    text-align: left
+  
+    p
+      font-size: 18px
+    
+    .quote
+      font-size: 18px
+      text-align: right
+      padding-right: 25%
+
